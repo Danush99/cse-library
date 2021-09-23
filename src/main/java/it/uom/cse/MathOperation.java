@@ -12,6 +12,7 @@ public class MathOperation {
 
     public static double subtract(double operand1, double operand2)
     {
+
         return operand1 - operand2;
     }
 
@@ -22,4 +23,14 @@ public class MathOperation {
         }
         return factorial;
     }
+
+    public static int sumOfIntegers(int n){
+        int summ =0 ;
+        for(int i=1; i<n+1 ; i++){
+            summ+=i;
+        }
+        return summ;
+    }
+
+
 }
