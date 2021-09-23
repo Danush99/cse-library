@@ -16,6 +16,27 @@ public class MathOperation {
         return operand1 - operand2;
     }
 
+
+    public static int sumOfPrimes(int n){
+        var sum = 0;
+        if(n < 2){
+            return 0;
+        }
+        for (int i =2; i< n; i++){
+            var isPrime = true;
+            for (int j=2; j< (int)Math.sqrt(i)+1; j++){
+                if(i%j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime){
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
     public static int factorial(int n){
         int factorial=1;
         for(int i=1; i<n+1; i++){
